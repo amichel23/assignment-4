@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="switch.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form>
+        <div>
+            <label for="input1">Variable 1</label>
+            <input type="number" id="input1" name="input1">
+        </div>
+        <div>
+            <label for="input2">Variable 2</label>
+            <input type="number" id="input2" name="input2">
+        </div>
+        <div>
+            <label for="input3">Operand</label>
+            <input type="text" id="input3" name="input3">
+        </div>
+        <input type="button" value="calculate" onclick="calculate(input1.value, input2.value)">
+        <!-- <input type="button" value="Add" onclick="add(input1.value, input2.value)"> -->
+        <!-- <input type="button" value="Add HTML elements" onclick="addHTMLElement()"> -->
+        <!-- <input type="button" value="Multiply" onclick="multiply(input1.value, input2.value)"> -->
+    </form>
+    <p id="result"></p>
+</html>

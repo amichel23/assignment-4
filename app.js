@@ -29,6 +29,8 @@ const courseResult = document.getElementById('course-list');
 console.log(mern, python, sql, java, other);
 console.log(total);
 
+// dom and if statements to get math gtg
+
 let checkMern = document.querySelector("input[name=mern]");
 checkMern.addEventListener('change', function(){
     if (this.checked){
@@ -98,6 +100,7 @@ checkOther.addEventListener('change', function(){
    costResult.innerText = (sum === errText) ? `ERROR - ${sum}` : `Your total is  ${sum}`;
    courseResult.innerText = (courses === errText) ? `ERROR - ${courses}` : `Your courses are  ${courses}`;
 
+// whats left: add discounts and create the table
    };     
 
    

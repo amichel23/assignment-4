@@ -326,7 +326,9 @@
                 <span><input class="radio" type="checkbox"> <input type="text"></span>
             </td>
         </tr>
-     
+        <div id="output">
+
+        </div>
         
       </table>
       <table class="two">
@@ -377,12 +379,13 @@
         </tr>
       </table>
       <div class="container">
-    <span><button class="button">Submit</button></span><span><button class="button">Reset</button></span>
+    <span><input type="submit" value="submit" onclick="processForm()" class="button">Submit</input></span><span><button class="button">Reset</button></span>
         </div>
-        <div>
+        <div id="output" >
             <table>
-
+                <p id="result" ></p>
             </table>
         </div>
+<script src="app.js" ></script>
 </body>
 </html>

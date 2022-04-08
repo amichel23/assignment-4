@@ -1,4 +1,4 @@
-// // decalred the prices for the courses
+// decalred the prices for the courses
 const course1 = 4750;
 const course2 = 3250;
 const course3 = 1500;
@@ -23,7 +23,20 @@ const other = Number((course5 * taxes) + course5);
 
 const submit = document.getElementById('root');
 const costResult = document.getElementById('result');
-const courseResult = document.getElementById('course-list');
+const courseResult = document.getElementById('course-list')
+const userState = document.getElementById('state');
+const userGrad = document.getElementById('gradSchool');
+const morning = document.getElementById('morningTiming');
+const noon = document.getElementById('noonTiming');
+const night = document.getElementById('nightTiming');
+const gpa = document.getElementById('undergradgpa');
+
+
+
+// function state(){
+// const homeOfResidence = document.getElementById('practice').innerText;
+// submit.addEventListener('keyup', console.log(homeOfResidence));
+// };
 
 
 console.log(mern, python, sql, java, other);
@@ -86,20 +99,29 @@ checkOther.addEventListener('change', function(){
         console.log("other not checked");
     }
 });
+
   function processForm(){
+   
    let totalArr = (total[0 + 1 + 2 + 3 + 4]);
    const errText = 'INVALID_OPERAND';
    for (let i = 0; i < total.length; i++){
        sum += total[i];
+       submit.onclick = function stateEntry(){
+        let state = document.getElementById('state').value;
+        console.log('you live in ', state);
+    }
        submit.addEventListener('submit',
        console.log(sum));
        console.log(courses);
+      
        
 
    };
    costResult.innerText = (sum === errText) ? `ERROR - ${sum}` : `Your total is  ${sum}`;
    courseResult.innerText = (courses === errText) ? `ERROR - ${courses}` : `Your courses are  ${courses}`;
-
+   stateResult.innerText = (state === errText) ? `ERROR - ${state}` : `Your courses are  ${state}`;
+// event listner to show sum
+// submit.addEventListener('submit',
 // whats left: add discounts and create the table
    };     
 

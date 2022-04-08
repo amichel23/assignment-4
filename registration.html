@@ -53,8 +53,13 @@
             <td></td>
         </tr>
         <tr>
+            <td>State</td>
+            <td><input class="input-width" type="text">(max 30 characters a-z and A-Z)</td>
+            <td></td>
+        </tr>
+        <tr>
             <td>Zipcode</td>
-            <td><input class="input-width" type="number">(max 6 digit number)</td>
+            <td><input class="input-width" type="number" id="zip" >(max 6 digit number)</td>
             <td></td>
         </tr>
         <tr>
@@ -313,17 +318,17 @@
         <tr>
             <td>Courses</td>
             <td>
-                <span><label class="radio" for="courses">Courses Applied For:</label></span>
+                <span><label class="radio" for="courses" >Courses Applied For:</label></span>
                 <span><label class="radio" for="mern">MERN</label></span>
-                <span><input class="radio" type="checkbox"></span>
+                <span><input class="radio" type="checkbox" name="mern"></span>
                 <span><label  class="radio" for="mern">PYTHON</label></span>
-                <span><input class="radio" type="checkbox"></span>
+                <span><input class="radio" type="checkbox" name="python" ></span>
                 <span><label class="radio" for="mern">SQL</label></span>
-                <span><input class="radio" type="checkbox"></span>
+                <span><input class="radio" type="checkbox" name="sql" ></span>
             <span><label class="radio" for="mern">JAVA</label></span>
-                <span><input class="radio" type="checkbox"></span>
+                <span><input class="radio" type="checkbox" name="java" ></span>
                 <span><label class="input-width" class="radio" for="mern">Others</label></span>
-                <span><input class="radio" type="checkbox"> <input type="text"></span>
+                <span><input class="radio" type="checkbox" name="other" > <input type="text"></span>
             </td>
         </tr>
         <div id="output">
@@ -355,7 +360,7 @@
            </tr>
            <tr>
              <td>3.	Graduate</td>
-             <td><input type="text"></td>
+             <td><input type="text" id="gradSchool"></td>
              <td><input type="text"></td>
              <td><input type="text" name="" id=""></td>
              
@@ -371,15 +376,15 @@
         <tr>
             <td style="margin: 0; padding: 0;">Preferred Timing</td>
             <td style="margin: 0; padding: 0;"><input class="radio" type="radio" id="morning" value="morning" style="margin: 0; padding: 0;">
-                <label class="radio" for="morning" style="margin: 0; padding: 0;" >Morning</label>
-                <input class="radio" type="radio" id="noon" value="noon" style="margin: 0; padding: 0;">
+                <label class="radio" for="morning" style="margin: 0; padding: 0;" id="morningTiming" >Morning</label>
+                <input class="radio" type="radio" id="noon" value="noon" style="margin: 0; padding: 0;" id="noonTiming">
                 <label class="radio" for="noon">Noon</label>
-                <input class="radio" type="radio" id="night" value="night">
+                <input class="radio" type="radio" id="night" value="night" id="nightTiming" >
                 <label class="radio" for="night">Night</label></td>
         </tr>
       </table>
       <div class="container">
-    <span><input type="submit" value="submit" onclick="processForm()" class="button">Submit</input></span><span><button class="button">Reset</button></span>
+    <span><input type="submit" value="submit" onclick="processForm()" class="button"></input></span><span><button class="button">Reset</button></span>
         </div>
         <div id="output" >
             <table>
